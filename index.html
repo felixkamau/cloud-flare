@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
+    <script src="https://kit.fontawesome.com/fcf083856e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="version-con">
+                <img src="assets/github (1).svg" class="git" id="githubLink">
+                <img src="assets/square-github.svg" class="git" id="github">
+                <img src="assets/square-x-twitter.svg" class="git" id="twitter">
+            </div>
+
+            <div class="header-text">
+                <p>AI/ML Engineer</p>
+                <h1>Hi, I'm <br>Felix From Kenya</h1>
+            </div>
+        </div>
+    </div>
+    <div id="tech-stack">
+        <div class="container">
+            <h1 class="sub-title">Tech Stack</h1>
+            <img src="assets/Node-JS-01.svg">
+            <img src="assets/tensorflow-tf.svg">
+            <img src="assets/Python-04.svg">
+            <img src="assets/JavaScript-01.svg">
+            <img src="assets/keras.svg">
+            <img src="assets/pytorch.svg">
+        </div>
+    </div>
+    <!-- ----------------------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/user2.jpg" alt="user">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-txt">I'm a passionate AI/ML engineer with a knack for full-stack development,
+                        dedicated to leveraging cutting-edge technology to solve real-world problems. With a strong
+                        foundation in machine learning algorithms, data analysis, and software engineering, I thrive on
+                        building end-to-end solutions that seamlessly integrate AI capabilities into robust
+                        applications.
+
+                        Driven by curiosity and a relentless pursuit of excellence.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>Implementing algorithms, manipulating data, and
+                                building AI applications in Python.</li>
+                            <li><span>Machine Learning Algorithms:</span><br>Knowledge of various machine learning
+                                algorithms, including supervised learning (e.g., regression, classification),
+                                unsupervised learning (e.g., clustering, dimensionality reduction).</li>
+                            <li><span>Deep Learning:</span><br>Familiarity with deep learning techniques and frameworks
+                                like TensorFlow, PyTorch, or Keras for building neural networks, convolutional neural
+                                networks (CNNs), recurrent neural networks (RNNs), and other deep learning
+                                architectures.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Code3camp:</span><br>DataScience and MachineLearning.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------------------------------------------Services--------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>AI Integration</h2>
+                    <p>Integrate AI/ML capabilities into existing software systems and workflows to automate
+                        tasks, improve productivity, and enhance user experiences.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-gears"></i>
+                    <h2>Performance Monitoring</h2>
+                    <p>Implement mechanisms for monitoring the performance of deployed AI/ML models in production
+                        environments and provide ongoing maintenance and support as needed.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2> Data Analysis</h2>
+                    <p>Advanced data analysis techniques to extract actionable insights from your datasets. I leverage
+                        AI/ML algorithms to uncover patterns, trends, and correlations that drive informed
+                        decision-making and fuel business growth.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2> Custom AI/ML Solutions </h2>
+                    <p>Tailored machine learning solutions designed to address your specific business challenges. From
+                        predictive analytics to computer vision, I develop cutting-edge AI applications to optimize your
+                        processes and drive innovation.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>Model Development and Training</h2>
+                    <p>Robust machine learning model development and training to unlock insights from your data. Whether
+                        you need predictive modeling, recommendation systems, or natural language processing solutions,
+                        I deliver state-of-the-art algorithms tailored to your needs.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-------------------------------------------------------Portfolio--------------------------------------------------------------------->
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/bnb.jpg">
+                    <div class="layer">
+                        <h3>Analyzing Airbnb Data</h3>
+                        <p>Analyzing Airbnb Data for a City using and performing descriptive statistics: mean, median,
+                            mode, range, and standard deviation of prices. Visualizing the distribution of prices using
+                            histograms and box plots</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="assets/reg.jpg">
+                    <div class="layer">
+                        <h3>Logistic Regression</h3>
+                        <p>Am using logistic regression (Binary classification) to predict what age of people buy
+                            insurance based on their age.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+
+                <div class="work">
+                    <img src="assets/com.jpg">
+                    <div class="layer">
+                        <h3>E-Commerce-Customer-Behavior-Analysis</h3>
+                        <p>Exploring and analyzing factors influencing customer behavior in an e-commerce setting.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+        // Function to open tabs
+        function opentab(event, tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Event listener for GitHub link
+        document.getElementById("githubLink").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default action
+            window.location.href = "https://github.com/felixkamau";
+        });
+
+        // Event listener for GitHub icon
+        document.getElementById("github").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default action
+            window.open("https://github.com/felixkamau", "_blank");
+        });
+
+        // Event listener for Twitter icon
+        document.getElementById("twitter").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default action
+            window.open("https://twitter.com/dev_kamau", "_blank");
+        });
+
+        // Add event listener to the Services link in the navigation
+        document.querySelector('nav a[href="#services"]').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            // Scroll to the Services section smoothly
+            document.querySelector('#services').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+
+        document.querySelector('nav a[href="#about"]').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            // Scroll to the Services section smoothly
+            document.querySelector('#about').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        document.querySelector('nav a[href="#portfolio"]').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            // Scroll to the Portfolio section smoothly
+            document.querySelector('#portfolio').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        var sidemen = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemen.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemen.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
